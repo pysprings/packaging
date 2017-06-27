@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="hello",
-      version='0.0.4',
+      version='0.0.5',
       description="Say high to the world",
       long_description="A demonstration of python packaging with setup.py",
       classifiers=[
@@ -20,5 +20,6 @@ setup(name="hello",
       entry_points = {
           'console_scripts': ['hello=hello:hello']
       },
-      install_requires=['colorama']
+      install_requires=['colorama'],
+      include_package_data=True
       )
