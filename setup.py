@@ -21,5 +21,7 @@ setup(name="hello",
           'console_scripts': ['hello=hello:hello']
       },
       install_requires=['colorama'],
-      include_package_data=True
+      include_package_data=True,
+      setup_requires=['pytest-runner'],
+      tests_require=['pytest']
       )

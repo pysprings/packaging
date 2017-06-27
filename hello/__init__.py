@@ -8,8 +8,11 @@ path =os.path.dirname(__file__)
 with open(os.path.join(path, 'greeting.json')) as f:
     greeting = json.load(f)
 
+def format(line):
+    return Fore.GREEN + line + Style.RESET_ALL
+
 def hello():
-    print(Fore.GREEN + greeting + Style.RESET_ALL)
+    print(format(greeting))
 
 if __name__ == '__main__':
     hello()
