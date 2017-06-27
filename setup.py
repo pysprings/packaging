@@ -1,4 +1,5 @@
 from setuptools import setup
 
 setup(name="hello",
-        py_modules=["hello"])
+      version='0.0.1',
+      packages=["hello"])
